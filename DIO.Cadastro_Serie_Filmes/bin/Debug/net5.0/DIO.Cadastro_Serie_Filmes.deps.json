@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "DIO.Cadastro_Serie_Filmes/1.0.0": {
+        "runtime": {
+          "DIO.Cadastro_Serie_Filmes.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DIO.Cadastro_Serie_Filmes/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

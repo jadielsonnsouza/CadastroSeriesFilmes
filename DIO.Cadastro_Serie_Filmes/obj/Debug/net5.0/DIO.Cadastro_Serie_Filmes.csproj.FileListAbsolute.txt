@@ -1,0 +1,16 @@
+C:\Projetos\CadastroSeriesFilmes\DIO.Cadastro_Serie_Filmes\bin\Debug\net5.0\DIO.Cadastro_Serie_Filmes.exe
+C:\Projetos\CadastroSeriesFilmes\DIO.Cadastro_Serie_Filmes\bin\Debug\net5.0\DIO.Cadastro_Serie_Filmes.deps.json
+C:\Projetos\CadastroSeriesFilmes\DIO.Cadastro_Serie_Filmes\bin\Debug\net5.0\DIO.Cadastro_Serie_Filmes.runtimeconfig.json
+C:\Projetos\CadastroSeriesFilmes\DIO.Cadastro_Serie_Filmes\bin\Debug\net5.0\DIO.Cadastro_Serie_Filmes.runtimeconfig.dev.json
+C:\Projetos\CadastroSeriesFilmes\DIO.Cadastro_Serie_Filmes\bin\Debug\net5.0\DIO.Cadastro_Serie_Filmes.dll
+C:\Projetos\CadastroSeriesFilmes\DIO.Cadastro_Serie_Filmes\bin\Debug\net5.0\ref\DIO.Cadastro_Serie_Filmes.dll
+C:\Projetos\CadastroSeriesFilmes\DIO.Cadastro_Serie_Filmes\bin\Debug\net5.0\DIO.Cadastro_Serie_Filmes.pdb
+C:\Projetos\CadastroSeriesFilmes\DIO.Cadastro_Serie_Filmes\obj\Debug\net5.0\DIO.Cadastro_Serie_Filmes.csprojAssemblyReference.cache
+C:\Projetos\CadastroSeriesFilmes\DIO.Cadastro_Serie_Filmes\obj\Debug\net5.0\DIO.Cadastro_Serie_Filmes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Projetos\CadastroSeriesFilmes\DIO.Cadastro_Serie_Filmes\obj\Debug\net5.0\DIO.Cadastro_Serie_Filmes.AssemblyInfoInputs.cache
+C:\Projetos\CadastroSeriesFilmes\DIO.Cadastro_Serie_Filmes\obj\Debug\net5.0\DIO.Cadastro_Serie_Filmes.AssemblyInfo.cs
+C:\Projetos\CadastroSeriesFilmes\DIO.Cadastro_Serie_Filmes\obj\Debug\net5.0\DIO.Cadastro_Serie_Filmes.csproj.CoreCompileInputs.cache
+C:\Projetos\CadastroSeriesFilmes\DIO.Cadastro_Serie_Filmes\obj\Debug\net5.0\DIO.Cadastro_Serie_Filmes.dll
+C:\Projetos\CadastroSeriesFilmes\DIO.Cadastro_Serie_Filmes\obj\Debug\net5.0\ref\DIO.Cadastro_Serie_Filmes.dll
+C:\Projetos\CadastroSeriesFilmes\DIO.Cadastro_Serie_Filmes\obj\Debug\net5.0\DIO.Cadastro_Serie_Filmes.pdb
+C:\Projetos\CadastroSeriesFilmes\DIO.Cadastro_Serie_Filmes\obj\Debug\net5.0\DIO.Cadastro_Serie_Filmes.genruntimeconfig.cache
