@@ -1,5 +1,4 @@
 <h1 align="center">Cadastro de Series e 🎞Filmes</h1>
----
 
 ## 📑 Sobre
 ---
@@ -14,6 +13,6 @@ O projeto foi desenvolvido utilizando a seguintes tecnologias:
 
 ---
 
-<div algin="center">
+<div align="center">
     <img src="imagens/projetoDIO.png" alt="Projeto_DIO" title="Projeto em C#">
 </div>
