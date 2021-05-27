@@ -14,7 +14,7 @@
             "args": [],
             "cwd": "${workspaceFolder}/DIO.Cadastro_Serie_Filmes",
             // For more information about the 'console' field, see https://aka.ms/VSCode-CS-LaunchJson-Console
-            "console": "internalConsole",
+            "console": "externalTerminal",
             "stopAtEntry": false
         },
         {
