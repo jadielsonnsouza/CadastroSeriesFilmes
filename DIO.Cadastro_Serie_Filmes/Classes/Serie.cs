@@ -14,7 +14,7 @@ namespace DIO.Cadastro_Serie_Filmes
 
         public Serie(int id, Genero genero, string titulo, string descricao, int ano)
         {
-            this.Id = Id;
+            this.Id = id;
             this.Genero = genero;
             this.Titulo = titulo;
             this.Descricao = descricao;
@@ -28,7 +28,8 @@ namespace DIO.Cadastro_Serie_Filmes
             retorno += "Gênero: " + this.Genero + Environment.NewLine;
             retorno += "Título: " + this.Titulo + Environment.NewLine;
             retorno += "Descrição: " + this.Descricao + Environment.NewLine;
-            retorno += "Ano de Início: " + this.Ano;
+            retorno += "Ano de Início: " + this.Ano + Environment.NewLine;
+            retorno += "Excluido: " + this.Excluido;
             return retorno;
         }
 
@@ -45,6 +46,11 @@ namespace DIO.Cadastro_Serie_Filmes
         public void Excluir()
         {
             this.Excluido = true;
+        }
+
+        public bool retornaExcluido()
+        {
+            return Excluido;
         }
     }
 }
