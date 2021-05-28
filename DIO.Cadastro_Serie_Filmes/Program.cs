@@ -47,15 +47,23 @@ namespace DIO.Cadastro_Serie_Filmes
         private static void VisualizarSerie()
         {
             Console.WriteLine("VISUALIZAR SÉRIE: ");
-            var serie = repositorio.RetornaPorId(IndiceSerie());
+
+            int indiceSerie = IndiceSerie();
+
+            indiceSerie = VerificaIndice(indiceSerie);
+
+            var serie = repositorio.RetornaPorId(indiceSerie);
 
             Console.WriteLine(serie);
         }
 
         private static void AtualizarSerie()
         {
-            Console.WriteLine("ATUALIZAR SÉRIE: ");
+            Console.WriteLine("\nATUALIZAR SÉRIE: ");
             int indiceSerie = IndiceSerie();
+
+            indiceSerie = VerificaIndice(indiceSerie);
+
             InserirAtributos();
 
             Serie atualizarSerie = new Serie(id: indiceSerie,
@@ -72,6 +80,8 @@ namespace DIO.Cadastro_Serie_Filmes
             Console.WriteLine("EXCLUIR SÉRIE: ");
             int indiceSerie = IndiceSerie();
 
+            indiceSerie = VerificaIndice(indiceSerie);
+
             Console.WriteLine("Deseja mesmo excluir a série? ");
             Console.WriteLine("1- SIM ");
             string confirmacao = Console.ReadLine();
@@ -79,10 +89,15 @@ namespace DIO.Cadastro_Serie_Filmes
             if (confirmacao == "1")
             {
                 repositorio.Excluir(indiceSerie);
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine("\nSérie Excluída");
+                Console.ResetColor();
             }
             else
             {
-                Console.WriteLine("Operação Cancelada");
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine("\nOperação Cancelada");
+                Console.ResetColor();
             }
         }
 
@@ -110,7 +125,6 @@ namespace DIO.Cadastro_Serie_Filmes
             if (lista.Count == 0)
             {
                 Console.WriteLine("Nenhuma série cadastrada.");
-                Console.Clear();
                 return;
             }
 
@@ -163,21 +177,31 @@ namespace DIO.Cadastro_Serie_Filmes
             Console.Write("Digite o gênero entre as opções acima: ");
             entradaGenero = int.Parse(Console.ReadLine());
 
-            if (entradaGenero > 0 && entradaGenero < 14)
+            while (!(entradaGenero > 0 && entradaGenero < 14))
             {
-                Console.Write("Digite o Título da Série: ");
-                entradaTitulo = Console.ReadLine();
+                Console.WriteLine("\n---------------------------------------\n");
+                Console.WriteLine($"{entradaGenero} é uma opção inválida!");
+                Console.Write("Digite o gênero entre as opções acima: ");
+                entradaGenero = int.Parse(Console.ReadLine());
+            }
 
+            Console.Write("Digite o Título da Série: ");
+            entradaTitulo = Console.ReadLine();
+
+            Console.Write("Digite o Ano de Início da Série: ");
+            entradaAno = int.Parse(Console.ReadLine());
+
+            while (!(entradaAno > 1900))
+            {
+                Console.WriteLine("\n---------------------------------------\n");
+                Console.WriteLine($"{entradaAno} é um ano inválido!");
                 Console.Write("Digite o Ano de Início da Série: ");
                 entradaAno = int.Parse(Console.ReadLine());
-
-                if (entradaAno > 1900)
-                {
-                    Console.Write("Digite a Descrição da Série: ");
-                    entradaDescricao = Console.ReadLine();
-                }
             }
-            
+
+            Console.Write("Digite a Descrição da Série: ");
+            entradaDescricao = Console.ReadLine();
+
             Console.WriteLine("---------------------------------------");
             Console.ResetColor();
         }
@@ -186,6 +210,18 @@ namespace DIO.Cadastro_Serie_Filmes
         {
             Console.Write("Digite o id da serie: ");
             int indiceSerie = int.Parse(Console.ReadLine());
+
+            return indiceSerie;
+        }
+
+        private static int VerificaIndice(int indiceSerie)
+        {
+            while (indiceSerie >= repositorio.ProximoId())
+            {
+                Console.WriteLine("\n---------------------------------------\n");
+                Console.WriteLine($"{indiceSerie} é um índice inválido\n");
+                indiceSerie = IndiceSerie();
+            }
 
             return indiceSerie;
         }
